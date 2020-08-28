@@ -1,0 +1,25 @@
+{
+  "name": "gen-vue-form-docs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "docs:dev": "vuepress dev",
+    "docs:build": "vuepress build",
+    "git:commit": "git cz"
+  },
+  "devDependencies": {
+    "commitizen": "^4.2.1",
+    "cz-conventional-emoji": "^1.0.2",
+    "markdown-it-image-loading": "^1.0.2",
+    "markdown-it-imsize": "^2.0.1",
+    "sass": "^1.26.10",
+    "sass-loader": "^10.0.1",
+    "vuepress": "^1.5.4",
+    "vuepress-theme-reco": "^1.5.5"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-emoji"
+    }
+  }
+}
