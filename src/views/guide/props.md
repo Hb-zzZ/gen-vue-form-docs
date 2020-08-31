@@ -178,7 +178,7 @@ export default {
 
 原本布局 和 不开启响应式布局
 
-![](/guide/responsive1.png =400x)
+![]/guide/responsive1.png =400x)
 
 </template>
 
@@ -186,7 +186,7 @@ export default {
 
 响应式布局
 
-![](/guide/responsive2.png =400x)
+![]/guide/responsive2.png =400x)
 
 </template>
 
