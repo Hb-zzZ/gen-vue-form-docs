@@ -4,7 +4,7 @@ module.exports = {
   theme: 'reco',
   //   title: 'gen-vue-form',
   base: '/',
-  dest: '/docs/public',
+  dest: './pages',
   description: 'gen-vue-form 文档，方便你更快入手！',
   head: [
     [
