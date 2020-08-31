@@ -13,7 +13,7 @@ module.exports = Object.assign(
     noFoundPageByTencent: false,
     startYear: '2020',
     author: 'Hb_zzZ',
-    lastUpdated: 'Last Updated',
+    lastUpdated: '最后更新',
     // 搜索设置
     search: true,
     searchMaxSuggestions: 10,

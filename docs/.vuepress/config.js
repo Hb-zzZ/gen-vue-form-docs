@@ -4,7 +4,7 @@ module.exports = {
   theme: 'reco',
   //   title: 'gen-vue-form',
   base: '/',
-  dest: '/public',
+  dest: '/docs/public',
   description: 'gen-vue-form 文档，方便你更快入手！',
   head: [
     [
@@ -24,8 +24,8 @@ module.exports = {
         loadingSrc: '/loading.svg',
         loadingWidth: 120,
         loadingHeight: 120,
-        minWidth: 100,
-        minHeight: 100
+        minWidth: 10,
+        minHeight: 10
       })
     }
   }
