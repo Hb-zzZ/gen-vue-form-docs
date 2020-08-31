@@ -3,7 +3,7 @@ const themeConfig = require('./config/')
 module.exports = {
   theme: 'reco',
   //   title: 'gen-vue-form',
-  base: '/docs/',
+  base: '/',
   dest: './docs',
   description: 'gen-vue-form 文档，方便你更快入手！',
   head: [
