@@ -52,7 +52,7 @@ title: props参数
 
 ### formData
 
-**含义**：是表单存放数据的地方
+**含义**:是表单存放数据的地方
 
 如果需要更新表单数据，只需将直接赋值给 formData 即可，只更新里面某个字段时，需要使用 vue 的[\$set](https://cn.vuejs.org/v2/guide/reactivity.html#%E5%AF%B9%E4%BA%8E%E5%AF%B9%E8%B1%A1)进行更新
 
@@ -89,17 +89,17 @@ export default {
 
 ### disabled
 
-**含义**：为 true 时，整个表单是禁用状态
+**含义**:为 true 时，整个表单是禁用状态
 
 ### formDesc
 
-**含义**：控制表单内出现的组件
+**含义**:控制表单内出现的组件
 
-**参考**：[formDesc 说明](/formDesc/)
+**参考**:[formDesc 说明](/views/guide/formDesc/)
 
 ### formAttrs
 
-**含义**：form 表单自身属性，支持将 element-ui 原本的[Form Attributes](https://element.eleme.cn/#/zh-CN/component/form#form-attributes)放入 form 中
+**含义**:form 表单自身属性，支持将 element-ui 原本的[Form Attributes](https://element.eleme.cn/#/zh-CN/component/form#form-attributes)放入 form 中
 
 ```vue
 <template>
@@ -118,7 +118,7 @@ export default {
 
 ### formValidator
 
-**含义**：表单自定义验证器，formDesc 中有组件定义了验证器时用到
+**含义**:表单自定义验证器，formDesc 中有组件定义了验证器时用到
 
 ```vue
 <template>
@@ -170,7 +170,7 @@ export default {
 
 ### responsive
 
-**含义**：是否响应式，是的时候当表单整体宽度小于 768px 时，所有布局都变为一行展示且 label 为顶部对齐，否的时候不变化。
+**含义**:是否响应式，是的时候当表单整体宽度小于 768px 时，所有布局都变为一行展示且 label 为顶部对齐，否的时候不变化。
 
 <HorizontalLayout>
 
@@ -178,7 +178,7 @@ export default {
 
 原本布局 和 不开启响应式布局
 
-![]/guide/responsive1.png =400x)
+![](/guide/responsive1.png =600x)
 
 </template>
 
@@ -186,7 +186,7 @@ export default {
 
 响应式布局
 
-![]/guide/responsive2.png =400x)
+![](/guide/responsive2.png =600x)
 
 </template>
 
@@ -194,7 +194,7 @@ export default {
 
 ### formOptions
 
-**含义**：获取表单内选项，支持对象 函数 promise
+**含义**:获取表单内选项，支持对象 函数 promise
 
 ::: warning
 

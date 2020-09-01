@@ -9,6 +9,11 @@ module.exports = {
       title: 'props参数',
       collapsable: false,
       path: 'props'
+    },
+    {
+      title: 'formDesc表单描述',
+      collapsable: false,
+      path: 'formDesc'
     }
   ]
 }
