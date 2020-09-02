@@ -8,7 +8,7 @@ title: formDesc表单描述
 formDesc: [
   {
     // 类型
-    type: String,
+    type: String | Component,
     // Form-Item 标签文本
     label: String,
     // 默认值（只有该组件渲染时才会触发，隐藏等不渲染的情况不会触发）
@@ -19,6 +19,8 @@ formDesc: [
     attrs: Object,
     // 组件事件, 与`v-on` 的 API 相同
     on: Object,
+    // 组件外层属性, 与`v-bind` 的 API 相同
+    itemAttrs: Object,
     // 组件的提示
     tip: String,
     // 是否隐藏该组件（隐藏时不会渲染组件）
@@ -100,7 +102,7 @@ console.log(formData)
 :::tip
 
 - 组件的 class 和 style 可在此放入
-- [组件 type 类型](/views/guide/formDesc-type/) 对应的 element-ui Attributes 也可在此放入
+- [组件 type 类型](/views/guide/formDesc-type.html#内置-type-类型) 对应的 element-ui Attributes 也可在此放入
 
 ```js
 formDesc: [
@@ -127,7 +129,7 @@ formDesc: [
 
 :::tip
 
-- [组件 type 类型](/views/guide/formDesc-type/) 对应的 element-ui Events 也可在此放入
+- [组件 type 类型](/views/guide/formDesc-type.html#内置-type-类型) 对应的 element-ui Events 也可在此放入
 
 ```js
 formDesc: [
@@ -149,6 +151,32 @@ formDesc: [
 ```
 
 :::
+
+### itemAttrs
+
+**含义**:组件外层属性, 与`v-bind` 的 API 相同
+
+:::tip
+
+- 组件外层一般是`el-form-item`，此时可以放入[Form-Item Attributes](https://element.eleme.cn/#/zh-CN/component/form#form-item-attributes)
+- `divider`、`layout`组件的外层是`div`，此时可以放入 class 与 style 等 Attributes
+
+:::
+
+```js
+formDesc: [
+  {
+    type: 'input',
+    model: 'title',
+    label: '标题',
+    itemAttrs: {
+      class: 'el-title-input',
+      style: 'font-size: 17px;',
+      labelWidth: 120
+    }
+  }
+]
+```
 
 ### tip
 
@@ -399,3 +427,31 @@ formDesc: [
 
 - slots: 组件的插槽
 - scopedSlots:组件的作用域插槽
+
+**参考** [render function](https://cn.vuejs.org/v2/guide/render-function.html#%E6%B7%B1%E5%85%A5%E6%95%B0%E6%8D%AE%E5%AF%B9%E8%B1%A1)
+
+::: tip
+
+具体开放插槽可查看 [组件 type 类型](/views/guide/formDesc-type/)
+
+:::
+
+```js
+formDesc: [
+  {
+    type: 'input',
+    model: 'title',
+    label: '标题',
+    slots: {
+      prefix(h) {
+        // 第一个参数是渲染函数，第二个参数是作用域插槽的数据
+        return h('strong', {
+          domProps: {
+            innerHTML: 'H1'
+          }
+        })
+      }
+    }
+  }
+]
+```

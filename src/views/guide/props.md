@@ -172,9 +172,9 @@ export default {
 
 **含义**:是否响应式，是的时候当表单整体宽度小于 768px 时，所有布局都变为一行展示且 label 为顶部对齐，否的时候不变化。
 
-<HorizontalLayout>
+<VerticalLayout>
 
-<template v-slot:left>
+<template v-slot:top>
 
 原本布局 和 不开启响应式布局
 
@@ -182,7 +182,7 @@ export default {
 
 </template>
 
-<template v-slot:right>
+<template v-slot:bottom>
 
 响应式布局
 
@@ -190,7 +190,7 @@ export default {
 
 </template>
 
-</HorizontalLayout>
+</VerticalLayout>
 
 ### formOptions
 

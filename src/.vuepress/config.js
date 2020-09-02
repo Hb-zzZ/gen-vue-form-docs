@@ -24,10 +24,10 @@ module.exports = {
 
       md.use(require('markdown-it-image-loading'), {
         loadingSrc: '/loading.svg',
-        loadingWidth: 120,
-        loadingHeight: 120,
-        minWidth: 10,
-        minHeight: 10
+        loadingWidth: 50,
+        loadingHeight: 50,
+        minWidth: 50,
+        minHeight: 50
       })
     }
   },

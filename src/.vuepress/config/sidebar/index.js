@@ -11,9 +11,9 @@ module.exports = {
       path: 'props'
     },
     {
-      title: 'formDesc表单描述',
+      title: 'formDesc',
       collapsable: false,
-      path: 'formDesc'
+      children: ['formDesc', 'formDesc-type']
     }
   ]
 }
