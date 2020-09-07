@@ -65,7 +65,7 @@ formDesc: [
 
 **含义**:生成的表单中 Form-Item 标签文本
 
-![](/guide/formDescLabel.png =600x)
+![png](../images/guide/formDescLabel.png =600x)
 
 ### default
 
@@ -188,7 +188,7 @@ tip 默认用[v-html](https://cn.vuejs.org/v2/guide/syntax.html#%E5%8E%9F%E5%A7%
 
 :::
 
-![](/guide/formDescTip.png =600x)
+![png](../images/guide/formDescTip.png =600x)
 
 ```js
 formDesc: [
@@ -230,7 +230,7 @@ formDesc: [
 
 :::
 
-![](/guide/formDescVIf.gif =600x)
+![png](../images/guide/formDescVIf.gif =600x)
 
 ```vue
 <template>
@@ -295,7 +295,7 @@ export default {
 
 :::
 
-![](/guide/formDescDisabledReset.gif =600x)
+![png](../images/guide/formDescDisabledReset.gif =600x)
 
 ```vue
 <template>
@@ -342,7 +342,7 @@ export default {
 
 **含义**:组件占位提示语
 
-![](/guide/formDescPlaceholder.png =600x)
+![png](../images/guide/formDescPlaceholder.png =600x)
 
 ### options
 

@@ -15,7 +15,7 @@ title: 介绍
 
 需达到以下效果
 
-![](/guide/form.png =600x)
+![png](../images/guide/form.png =600x)
 
 <VerticalLayout>
 

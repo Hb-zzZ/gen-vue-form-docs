@@ -50,7 +50,7 @@ title: 组件 type 类型
 
 `divider`中 label 字段无效
 
-![](/guide/formDesc-typeText.png =600x)
+![png](../images/guide/formDesc-typeText.png =600x)
 
 ```js
 formDesc: [
@@ -89,7 +89,7 @@ formDesc: [
 | select         | [Attributes](https://element.eleme.cn/#/zh-CN/component/select#option-attributes)            |
 | radio          | [Attributes](https://element.eleme.cn/#/zh-CN/component/radio#radio-attributes)              |
 
-![](/guide/formDesc-typeOptions.png =300x)
+![png](../images/guide/formDesc-typeOptions.png =300x)
 
 ```js
 formDesc: [
@@ -110,7 +110,7 @@ formDesc: [
 
 该组件为布局组件，可参考[Layout](https://element.eleme.cn/#/zh-CN/component/layout)
 
-![](/guide/formDesc-typeLayout.png =600x)
+![png](../images/guide/formDesc-typeLayout.png =600x)
 
 ```js
 formDesc: [
@@ -183,7 +183,7 @@ formDesc: [
 
 该组件为插槽组件，组件过大时建议使用[组件作为 type 方式 或 全局组件](#type-具体说明)
 
-![](/guide/formDesc-typeSlot.png =600x)
+![png](../images/guide/formDesc-typeSlot.png =600x)
 
 ```vue
 <template>
@@ -249,7 +249,7 @@ export default {
 
 该组件为表格表单组件
 
-![](/guide/formDesc-typeTableForm.gif =600x)
+![png](../images/guide/formDesc-typeTableForm.gif =600x)
 
 ```js
 formDesc: [
