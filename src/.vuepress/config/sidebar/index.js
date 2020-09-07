@@ -6,14 +6,14 @@ module.exports = {
       children: ['', 'getting-started']
     },
     {
-      title: 'props参数',
+      title: '表单form',
       collapsable: false,
-      path: 'props'
+      children: ['form-props', 'form-methods']
     },
     {
       title: 'formDesc',
       collapsable: false,
-      children: ['formDesc', 'formDesc-type']
+      children: ['formDesc', 'formDesc-type', 'formDesc-linkages']
     }
   ]
 }

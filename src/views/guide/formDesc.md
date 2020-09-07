@@ -226,7 +226,7 @@ formDesc: [
 
 :::tip
 
-表单有[内置联动方法](/views/guide/linkage/)
+表单有[内置联动方法](/views/guide/formDesc-linkages.html#内置联动函数)
 
 :::
 
@@ -362,7 +362,7 @@ export default {
 
 ### optionsKey
 
-**含义**:使用 [formOptions](/views/guide/props.html#formoptions) 时，options 对应的映射字段
+**含义**:使用 [formOptions](/views/guide/form-props.html#formoptions) 时，options 对应的映射字段
 
 ### optionsValueKey
 
