@@ -54,7 +54,7 @@ title: 表单props参数
 
 **含义**:是表单存放数据的地方
 
-如果需要更新表单数据，只需将直接赋值给 formData 即可，只更新里面某个字段时，需要使用 vue 的[\$set](https://cn.vuejs.org/v2/guide/reactivity.html#%E5%AF%B9%E4%BA%8E%E5%AF%B9%E8%B1%A1)进行更新
+> 如果需要更新表单数据，只需将直接赋值给 formData 即可，只更新里面某个字段时，需要使用 vue 的[\$set](https://cn.vuejs.org/v2/guide/reactivity.html#%E5%AF%B9%E4%BA%8E%E5%AF%B9%E8%B1%A1)进行更新
 
 ```vue
 <script>
@@ -95,7 +95,7 @@ export default {
 
 **含义**:控制表单内出现的组件
 
-**参考**:[formDesc 说明](/views/guide/formDesc/)
+**参考**:[formDesc表单描述](/views/guide/formDesc/)
 
 ### formAttrs
 

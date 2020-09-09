@@ -10,6 +10,7 @@
   },
   "devDependencies": {
     "commitizen": "^4.2.1",
+    "cz-conventional-changelog": "^3.3.0",
     "cz-conventional-emoji": "^1.0.2",
     "markdown-it-image-loading": "^1.0.2",
     "markdown-it-imsize": "^2.0.1",

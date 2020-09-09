@@ -3,12 +3,12 @@ module.exports = {
     {
       title: '指南',
       collapsable: false,
-      children: ['', 'getting-started']
+      children: ['', 'getting-started', 'global-config']
     },
     {
       title: '表单form',
       collapsable: false,
-      children: ['form-props', 'form-methods']
+      children: ['form-props', 'form-methods', 'form-rules']
     },
     {
       title: 'formDesc',
