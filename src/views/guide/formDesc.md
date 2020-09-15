@@ -432,7 +432,7 @@ formDesc: [
 
 ::: tip
 
-具体开放插槽可查看 [组件 type 类型](/views/guide/formDesc-type/)
+具体开放插槽可查看 [组件开放的插槽](/views/guide/formDesc-type.html#开放的插槽)
 
 :::
 

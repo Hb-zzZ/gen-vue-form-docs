@@ -40,6 +40,26 @@ title: 组件 type 类型
 | week           | 周             | [Attributes](https://element.eleme.cn/#/zh-CN/component/datetime-picker#attributes)         | [Events](https://element.eleme.cn/#/zh-CN/component/datetime-picker#events)         |
 | year           | 年             | [Attributes](https://element.eleme.cn/#/zh-CN/component/datetime-picker#attributes)         | [Events](https://element.eleme.cn/#/zh-CN/component/datetime-picker#events)         |
 
+## 开放的插槽
+
+[使用方法](/views/guide/formDesc.html#slots)
+
+::: tip
+
+element-ui 中插槽名字`-`对应`default`字段
+
+:::
+
+| type         | slots                                                                        | scopedSlots                                                                              |
+| ------------ | ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| autocomplete | [slots](https://element.eleme.cn/#/zh-CN/component/input#autocomplete-slots) | [scopedSlots](https://element.eleme.cn/#/zh-CN/component/input#autocomplete-scoped-slot) |
+| cascader     | -                                                                            | [scopedSlots](https://element.eleme.cn/#/zh-CN/component/cascader#cascader-slots)中的`-` |
+| divider      | -                                                                            | 任意 Key，参数为 `{ value, desc }`                                                       |
+| input        | [slots](https://element.eleme.cn/#/zh-CN/component/input#input-slots)        | -                                                                                        |
+| password     | [slots](https://element.eleme.cn/#/zh-CN/component/input#input-slots)        | -                                                                                        |
+| text         | -                                                                            | 任意 Key，参数为 `{ value, desc }`                                                       |
+| upload       | [slots](https://element.eleme.cn/#/zh-CN/component/upload#slot)              | -                                                                                        |
+
 ## 特殊说明
 
 ### divider
@@ -336,6 +356,47 @@ formDesc: [
         }
       }
     ]
+  }
+]
+```
+
+### upload
+
+上传组件和 element-ui 的 upload 组件使用一致，唯一值得注意的是组件增加了一个属性`responseFn`对后台返回结果进行处理
+
+::: tip
+
+可以[全局属性](/views/guide/global-config/)定义`responseFn`统一对后台返回结果进行处理
+
+优先级: 组件自身 responseFn > 全局 responseFn
+
+:::
+
+```js
+formDesc: [
+  {
+    type: 'upload',
+    label: '上传文件',
+    model: 'files',
+    attrs: {
+      // 上传地址，必要，也可以从全局属性定义
+      action: `xxx/files/upload`,
+      // 组件自身responseFn对后台返回结果进行处理
+      responseFn: (res, file) => {
+        // res是上传完成后返回的response
+        const { name, size, id } = (res && res.data) || {}
+
+        // 处理后可返回一个对象，该对象会成为最终file的值（必须保证返回的含有name字段）
+        return {
+          name,
+          size,
+          id
+        }
+        // 可返回Boolean true时代表上传成功，触发on-success钩子,false时代表上传失败，file不存入绑定的数组中，触发on-error钩子
+        // return true
+        // return false
+      }
+    }
   }
 ]
 ```

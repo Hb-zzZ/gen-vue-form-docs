@@ -159,3 +159,46 @@ Vue.use(packages, {
 })
 // 定义后以上组件未填写时校验提示语为 '标题不能为空'
 ```
+
+### 自定义验证器
+
+::: tip
+
+优先级: 组件自身直接写入自定义验证器 > 表单自定义验证器 > 全局自定义验证器
+
+:::
+
+- 组件自身直接写入自定义验证器
+
+```js
+formDesc: [
+  {
+    model: 'title',
+    label: '标题',
+    type: 'input',
+    rule: {
+      required: true,
+      validator: (data) => {
+        const { callback, rule, value } = data
+        const { required } = rule
+
+        const valueNotExist =
+          !value || (typeof value === 'string' && !value.trim())
+
+        if (!required && valueNotExist) {
+          callback()
+        } else if (valueNotExist) {
+          callback(new Error('必填项'))
+        } else if (value.length <= 3) {
+          callback(new Error('标题三位以上'))
+        } else {
+          callback()
+        }
+      }
+    }
+  }
+]
+```
+
+- [表单自定义验证器](/views/guide/form-props.html#formvalidator)
+- [全局自定义验证器](/views/guide/global-config.html#formvalidator)

@@ -3,7 +3,7 @@ module.exports = {
     {
       title: '指南',
       collapsable: false,
-      children: ['', 'getting-started', 'global-config']
+      children: ['', 'getting-started']
     },
     {
       title: '表单form',
@@ -14,6 +14,16 @@ module.exports = {
       title: 'formDesc',
       collapsable: false,
       children: ['formDesc', 'formDesc-type', 'formDesc-linkages']
+    },
+    {
+      title: '全局配置',
+      collapsable: false,
+      path: 'global-config'
+    },
+    {
+      title: '多层级model',
+      collapsable: false,
+      path: 'deep-model'
     }
   ]
 }

@@ -106,7 +106,7 @@ vIf: [
 
 ### 自定义全局联动函数
 
-可以[全局配置](/views/guide/globalConfig/)自定义联动函数使用
+可以[全局配置](/views/guide/global-config/)自定义联动函数使用
 
 ```js
 // 自定义全局配置
