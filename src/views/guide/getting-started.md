@@ -14,8 +14,6 @@ title: 快速开始
 
 > git subtree add --prefix=lib/gen-vue-form git@github.com:Hb-zzZ/gen-vue-form.git master --squash
 
-<br/>
-
 ## 更新
 
 `项目变更时，需要更新项目时`
@@ -48,4 +46,4 @@ new Vue({
 }).$mount('#app')
 ```
 
-`详细全局配置可查看`[gen-vue-form全局配置](/views/config#global/)
+`详细全局配置可查看`[gen-vue-form 全局配置](/views/config#global/)

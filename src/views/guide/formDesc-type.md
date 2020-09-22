@@ -7,9 +7,6 @@ title: 组件 type 类型
 - 当 type 为 `Component` 时，会直接加载该组件，定义组件可查看[自定义组件](/views/guide/custom-component)
 - 当 type 为 `String` 时，加载顺序为 `内置组件` ⏩ [全局组件](/views/guide/custom-component) ⏩ `报错`
 
-<br/>
-<br/>
-
 ## 内置 type 类型
 
 | type           | 含义           | element-ui Attributes                                                                       | element-ui Events                                                                   |
