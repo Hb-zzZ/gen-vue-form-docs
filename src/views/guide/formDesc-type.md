@@ -303,54 +303,47 @@ formDesc: [
     cols: [
       {
         // 表格Table-column Attributes属性 https://element.eleme.cn/#/zh-CN/component/table#table-column-attributes
-        attrs: {
-          fixed: 'left'
+        colAttrs: {
+          fixed: 'left',
+          // 最小宽度，一般填写此属性（可以缩放自适应，想用width控制则替换该字段
+          minWidth: 120
         },
-        // 最小宽度，一般填写此属性（可以缩放自适应，想用width时可以在attrs写入，该值不填写即可）
-        minWidth: 120,
-        // 在此放入组件信息，对应一列
-        section: {
-          hidden: false,
-          show: true,
-          // 是否禁用该组件
-          disabled: false,
-          model: 'name',
-          type: 'input',
-          label: '名字',
-          // 该校验会在每行该组件使用
-          rule: {
-            required: true,
-            message: '缺少名字'
-          },
-          // 该默认值会在每行新增时放入，不会覆盖表格表单的默认值
-          default: '我是一个人'
-        }
+        // 在此放入组件信息，对应一列 ⏬⏬⏬
+        hidden: false,
+        show: true,
+        // 是否禁用该组件
+        disabled: false,
+        model: 'name',
+        type: 'input',
+        label: '名字',
+        // 该校验会在每行该组件使用
+        rule: {
+          required: true,
+          message: '缺少名字'
+        },
+        // 该默认值会在每行新增时放入，不会覆盖表格表单的默认值
+        default: '我是一个人'
       },
       {
-        attrs: {
+        colAttrs: {
           width: 90
         },
-        section: {
-          model: 'sex',
-          type: 'select',
-          label: '性别',
-          options: [
-            { value: '0', label: '男' },
-            { value: '1', label: '女' }
-          ],
-          rule: {
-            required: true,
-            message: '缺少性别'
-          }
+        model: 'sex',
+        type: 'select',
+        label: '性别',
+        options: [
+          { value: '0', label: '男' },
+          { value: '1', label: '女' }
+        ],
+        rule: {
+          required: true,
+          message: '缺少性别'
         }
       },
       {
-        minWidth: 200,
-        section: {
-          model: 'remark',
-          type: 'textarea',
-          label: '备注'
-        }
+        model: 'remark',
+        type: 'textarea',
+        label: '备注'
       }
     ]
   }
